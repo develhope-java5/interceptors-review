@@ -1,4 +1,4 @@
-package com.develhope.java5.hellomvctest.controller;
+package com.develhope.java5.interceptorsreview.controller;
 
 import java.util.List;
 
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.develhope.java5.hellomvctest.entities.Fruit;
-import com.develhope.java5.hellomvctest.service.FruitService;
+import com.develhope.java5.interceptorsreview.entities.Fruit;
+import com.develhope.java5.interceptorsreview.service.FruitService;
 
 @RestController
 @RequestMapping("/fruits")

@@ -1,4 +1,4 @@
-package com.develhope.java5.hellomvctest.interceptors;
+package com.develhope.java5.interceptorsreview.interceptors;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.servlet.HandlerInterceptor;
 
-import com.develhope.java5.hellomvctest.service.SupplierService;
+import com.develhope.java5.interceptorsreview.service.SupplierService;
 
 public class SupplierHeaderInterceptor implements HandlerInterceptor {
     @Autowired

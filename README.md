@@ -1,10 +1,18 @@
 # Argomenti trattati
-- Introduzione agli integration test per controller su Spring tramite *MockMvc*
+- Ripasso sugli Interceptors di Spring
+- Abilitare un interceptor tramite variabile d'ambiente
 
 # Esercizio 1
-Completare la suite FruitControllerTests, pensando a più casi possibili da testare compresi i casi di errore. **È normale che i test falliscano, non avendo ancora implementato le relative funzionalità.**
-
-Procedere ad implementare le rimanenti funzionalità in FruitController e FruitService fino a quando tutti i test non passano.
+Fare in modo che SupplierHeaderInterceptor venga eseguito solo sugli URI contenenti /fruits/ tramite il metodo *excludePathPatterns(...)*.
 
 # Esercizio 2
-Fare in modo che l'ambiente e/o il profilo usato per l'esecuzione sia diverso da quello utilizzato dai test (consiglio: date un'occhiata all'annotazione *@ActiveProfiles* ed a [questa guida](https://www.baeldung.com/spring-profiles))
+Aggiungere l'oggetto *Supplier* relativo alla chiave identificativa nell'header come attributo della richiesta HTTP (*request.setAttribute(...)*). 
+
+# Esercizio 3
+Aggiungere all'entità *Supplier* un campo *deliveredQuantity* di tipo intero che indichi la quantità di frutta consegnata dal fornitore.
+Fare in modo che questo valore venga aggiornato ad ogni richiesta POST in /fruits/.
+
+Implementare un interceptor *SupplierQuantityInterceptor* che ad ogni richiesta aggiunga un header alla risposta *X-Total-Delivered-Quantity* che indica quanta frutta il supplier ha consegnato fino a quel momento, **dopo che la richiesta è stata elaborata dal controller**.
+
+# Esercizio 4
+Scrivere integration test per FruitController e SupplierController.

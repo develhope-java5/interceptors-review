@@ -1,4 +1,4 @@
-package com.develhope.java5.hellomvctest.entities;
+package com.develhope.java5.interceptorsreview.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

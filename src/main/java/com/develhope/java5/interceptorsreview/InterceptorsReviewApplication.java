@@ -1,13 +1,13 @@
-package com.develhope.java5.hellomvctest;
+package com.develhope.java5.interceptorsreview;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class HelloMvcTestApplication {
+public class InterceptorsReviewApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(HelloMvcTestApplication.class, args);
+		SpringApplication.run(InterceptorsReviewApplication.class, args);
 	}
 
 }

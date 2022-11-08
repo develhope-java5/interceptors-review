@@ -1,10 +1,10 @@
-package com.develhope.java5.hellomvctest.service;
+package com.develhope.java5.interceptorsreview.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.develhope.java5.hellomvctest.entities.Supplier;
-import com.develhope.java5.hellomvctest.repositories.SupplierRepository;
+import com.develhope.java5.interceptorsreview.entities.Supplier;
+import com.develhope.java5.interceptorsreview.repositories.SupplierRepository;
 
 @Service
 public class SupplierService {
